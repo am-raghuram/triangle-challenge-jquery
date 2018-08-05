@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Triangle Challenge</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.25.min.css" />
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<!-- <header data-ts="TopBar"></header> -->
+
+	<main data-ts="Main">
+		<div class="grid-container">
+			<h2>Triangle Challenge</h2>
+			<h4>Enter the length of the sides:</h4>
+			<form data-ts="Form" id="triangle-input">
+				<fieldset>
+
+					<label class="input-validation">
+						<label for="side1">Side X:</label>
+						<input type="number" name="side1" id="side1" class="form-control" required>
+					</label>
+					<dl class="ts-errors">
+						<dt>Error: Enter a numeric value </dt>
+					</dl>
+
+				</fieldset>
+				<fieldset>
+						<label class="input-validation">
+						<label for="side2">Side Y:</label>
+						<input type="number" name="side2" id="side2" class="form-control" required>
+					</label>
+					<dl class="ts-errors">
+						<dt>Error: Enter a numeric value </dt>
+					</dl>
+
+				</fieldset>
+				<fieldset>
+						<label class="input-validation">
+						<label for="side3">Side Z:</label>
+						<input type="number" name="side3" id="side3" class="form-control" required>
+					</label>
+					<dl class="ts-errors">
+						<dt>Error: Enter a numeric value </dt>
+					</dl>
+
+				</fieldset>
+				<button type="submit" data-ts="Button" id="check-triangle" class="ts-primary" required>
+					<span>Submit</span>
+				</button>
+
+			</form>
+			<div id="result">
+				<h3>Result:
+					<span id="type" class="text-info"></span>
+				</h3>
+				<div id="picture">
+					<svg height="300" width="400">
+						<polygon style="fill:#3a9ab7;stroke:#1a5178;stroke-width:1" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.25.min.js"></script>
+<script src="application.js"></script>
+
+</html>
