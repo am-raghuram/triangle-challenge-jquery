@@ -9,7 +9,6 @@ $(document).ready(function () {
     $('form#triangle-input').submit(function (event) {
         var invalid = false;
         console.log("Checking..")
-        //clears the type each time button is pressed so you can check again without refreshing page
         $('#type').empty();
         $('#result').hide();
         $('form#triangle-input').find('.ts-error').removeClass('ts-error');
